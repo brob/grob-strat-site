@@ -12,7 +12,7 @@ const reports = defineCollection({
     title,
     "slug": slug.current
 }
-        `);
+        `, {}, {perspective: 'published'});
         return reports.map((report) => {
             const html = toHTML(report.reportRich, {
               components: {
