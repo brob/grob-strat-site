@@ -18,7 +18,9 @@ const reports = defineCollection({
               components: {
               types: {
                 report: ({value}) => {
-                  return (`<div style="border: 1px solid #ccc; overflow: auto; width: 100%"><pre>${value.reportText}</pre></div>`)
+                  return (`<div style="border: 1px solid #ccc; overflow: auto; width: 100%">
+<pre style="font-size:.85rem;">${value.reportText}</pre>
+                    </div>`)
                 }
               }
             }
