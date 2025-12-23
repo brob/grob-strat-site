@@ -92,10 +92,9 @@ const reports = await getCollection('reports');
 					{
 						reports.map((report) => (
 							<li>
-								<a href={`/blog/${report.data.slug}/`}>
-			
+								<a href={`/projects/${report.data.slug}/`}>
 									<h4 class="title">{report.data.title}</h4>
-									
+									<p>Do you want a description here?</p>
 								</a>
 							</li>
 						))
