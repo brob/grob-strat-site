@@ -15,6 +15,5 @@ const report = Astro.props;
 ---
 
 <BlogPost {...report.data}>
-	hi
 	<div set:html={report.data.html}></div>
 </BlogPost>
