@@ -10,6 +10,7 @@ const reports = defineCollection({
   _id,
     reportRich,
     title,
+    heroImage,
     "slug": slug.current
 }
         `, {}, {perspective: 'published'});

@@ -5,6 +5,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import SanityImage from '../components/SanityImage.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -64,6 +65,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 					<div class="title">
 					
 						<h1>{title}</h1>
+						<div class="hero-image">
+							<SanityImage node={heroImage} />
+						</div>
 						<hr />
 					</div>
 					<slot />
